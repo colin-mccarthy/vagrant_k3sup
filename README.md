@@ -9,6 +9,11 @@ Saving file to: /Users/colin/work/k3s/kubeconfig
 export KUBECONFIG=/Users/colin/work/k3s/kubeconfig
 kubectl get node -o wide
 
+
+# Test your cluster with:
+export KUBECONFIG=/Users/colin/work/geerlingguy/kubeconfig
+kubectl get node -o wide
+
 ```
 
 
