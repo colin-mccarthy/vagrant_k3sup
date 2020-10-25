@@ -14,8 +14,6 @@ kubectl get node -o wide
 
 # Centos Vagrantfile
 
-Tip: Use geerlingguy/centos7 it containes Virtualbox Guest Additions
-
  
 
 ```
@@ -30,7 +28,10 @@ Set public_network in Vagrantfile
 config.vm.network "public_network"
 
 ```
-
+Add this to ignore shared folders plugin errors
+```
+config.vm.synced_folder ".", "/vagrant", disabled: true
+```
 
 You need to vagrant ssh and your copy public key to .ssh/authorized_keys manually
 
